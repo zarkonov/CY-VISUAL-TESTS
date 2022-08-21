@@ -1,0 +1,39 @@
+{
+  "name": "cy-visual-tests",
+  "version": "1.0.0",
+  "description": "visual regression testing with cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run-tests": "cypress run",
+    "cy:update-snapshots": "cypress run --env updateSnapshots=true",
+    "cy:run-tests-with-reporter": "cypress run --reporter cypress-image-snapshot/reporter",
+    "cy-run-tests-with-no-failure": "cypress run --env failOnSnapshotDiff=false",
+    "test": "percy exec -- cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zarkonov/CY-VISUAL-TESTS.git"
+  },
+  "keywords": [
+    "cypress",
+    "visual",
+    "testing",
+    "snapshot"
+  ],
+  "author": "ZN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zarkonov/CY-VISUAL-TESTS/issues"
+  },
+  "homepage": "https://github.com/zarkonov/CY-VISUAL-TESTS#readme",
+  "devDependencies": {
+    "@percy/cli": "^1.9.1",
+    "cypress": "^4.12.1",
+    "cypress-image-snapshot": "^4.0.1"
+  },
+  "dependencies": {
+    "@percy/cypress": "^3.1.2",
+    "prettier": "^2.7.1"
+  }
+}
