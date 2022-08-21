@@ -9,7 +9,7 @@
     "cy:update-snapshots": "cypress run --env updateSnapshots=true",
     "cy:run-tests-with-reporter": "cypress run --reporter cypress-image-snapshot/reporter",
     "cy-run-tests-with-no-failure": "cypress run --env failOnSnapshotDiff=false",
-    "test": "percy exec -- cypress run"
+    "cy:percy": "percy exec -- cypress run"
   },
   "repository": {
     "type": "git",
